@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --light-violt-bg: hsl(270, 20%, 96%);
+  --main-heading-color: hsl(271, 36%, 24%);
+  --paragraph-color: hsl(270, 7%, 64%);
+}
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+body::before {
+  position: absolute;
+  content: "";
+  left: -150px !important;
+  top: -100px !important;
+  width: 70vw !important;
+  height: 70vh !important;
+  background: linear-gradient(45deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.container .chat {
+  flex-basis: 55%;
+  position: relative;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .chat .mobile {
+  background-color: var(--light-violt-bg);
+  border: 10px solid white;
+  border-radius: 10px;
+  width: 250px;
+  height: 464px;
+}
+.container .text {
+  flex-basis: 43%;
+  padding: 20px;
+  position: relative;
+}
+.container .text > h1 {
+  color: var(--main-heading-color);
+  margin: 15px 0;
+  font-size: 36px;
+}
+.container .text > p {
+  color: var(--paragraph-color);
+  line-height: 1.5;
+}
+/* Media Section */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .chat {
+    left: -15px;
+    top: 40px;
+  }
+  .container .text {
+    margin: 30px;
+    padding: 20px;
+    width: 300px;
+  }
+  .container .mobile {
+    left: 0;
+    top: 30px;
+  }
+  body::before {
+    left: -137px !important;
+    top: 0px !important;
+    width: 346px !important;
+    height: 378px !important;
+  }
+}
+@media (min-width: 1400px) {
+  body::before {
+    width: 650px !important;
+    height: 850px !important;
+  }
+  .container .chat {
+    flex-basis: 300px;
+    position: relative;
+    left: 412px;
+  }
+  .container .chat .mobile {
+    width: 290px;
+    height: 500px;
+  }
+  .container .text {
+    flex-basis: 680px;
+  }
+}
