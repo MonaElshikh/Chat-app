@@ -1,7 +1,11 @@
 @media (min-width:1440px) {
+
+    .caht-app {
+        height: 100vh !important;
+    }
     .caht-app::before {
         width: 47%;
-        height: 70%;
+        height: 90%;
         left: -155px;
         top: -45px;
         border-bottom-right-radius: 50%;
@@ -9,7 +13,7 @@
     }
     .caht-app::after {
         width: 47%;
-        height: 88%;
+        height: 90%;
         border-top-left-radius: 43% 22%;
         border-top-right-radius: 55%;
         right: -300px;
