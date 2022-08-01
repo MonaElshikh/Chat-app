@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
+      rel="preload"
+      href="css/media.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -22,68 +28,71 @@
     <title>Caht App | Mona Elshikh</title>
   </head>
   <body>
-    <div class="caht-app">
-      <div class="mobile">
-        <div class="mobile-header">
-          <div class="head-info">
-            <span><</span>
-            <img src="images/avatar.jpg" alt="avatar" />
-            <div class="user-data">
-              <h1>Samual Green</h1>
-              <span>Available to talk</span>
+    <div class="caht-app" role="main">
+      <div class="chat-content">
+        <div class="shape">
+          <div class="mobile">
+            <div class="mobile-header">
+              <div class="head-info">
+                <span><</span>
+                <img src="images/avatar.jpg" alt="avatar" />
+                <div class="user-data">
+                  <h1>Samual Green</h1>
+                  <span>Available to talk</span>
+                </div>
+              </div>
+              <div class="elipses">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="mobile-body">
+              <div class="left-chat">
+                That's sounds great. i'd be happy to disscuss more
+              </div>
+              <div class="left-chat">
+                can you send over some pictures for your dogs. Please?
+              </div>
+              <div class="pics">
+                <img src="images/dog-image-1.jpg" alt="dog-image-1" />
+                <img src="images/dog-image-2.jpg" alt="dog-image-2" />
+                <img src="images/dog-image-3.jpg" alt="dog-image-3" />
+              </div>
+              <div class="right">
+                <div class="right-chat">
+                  here are a few pictures. she's a happy girl
+                </div>
+                <div class="right-chat">Can you make it?</div>
+              </div>
+              <div class="left-chat">
+                She looks so happy. The time we disscussed works. How long shall
+                i take her out ?
+              </div>
+              <div class="offer">
+                <div class="loading"></div>
+                <p>30 minutes walk</p>
+                <div class="price">$29</div>
+              </div>
+              <div class="offer">
+                <div class="loading"></div>
+                <p>1 hour walk</p>
+                <div class="price">$49</div>
+              </div>
+            </div>
+            <div class="mobile-footer">
+              <input type="text" placeholder="type a message" />
             </div>
           </div>
-          <div class="elipses">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
-        <div class="mobile-body">
-          <div class="left-chat">
-            That's sounds great. i'd be happy to disscuss more
-          </div>
-          <div class="left-chat">
-            can you send over some pictures for your dogs. Please?
-          </div>
-          <div class="pics">
-            <img src="images/dog-image-1.jpg" alt="dog-image-1" />
-            <img src="images/dog-image-2.jpg" alt="dog-image-2" />
-            <img src="images/dog-image-3.jpg" alt="dog-image-3" />
-          </div>
-          <div class="right">
-            <div class="right-chat">
-              here are a few pictures. she's a happy girl
-            </div>
-            <div class="right-chat">Can you make it?</div>
-          </div>
-          <div class="left-chat">
-            She looks so happy. The time we disscussed works. How long shall i
-            take her out ?
-          </div>
-          <div class="offer">
-            <div class="loading"></div>
-            <p>30 minutes walk</p>
-            <div class="price">$29</div>
-          </div>
-          <div class="offer">
-            <div class="loading"></div>
-            <p>1 hour walk</p>
-            <div class="price">$49</div>
-          </div>
+        <div class="info">
+          <h1>Simple Booking</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+            tempore explicabo quod ut minima mollitia veniam reiciendis
+            consectetur! Perferendis obcaecati illum .
+          </p>
         </div>
-        <div class="mobile-footer">
-          <input type="text" placeholder="type a message" />
-          <div class="send"></div>
-        </div>
-      </div>
-      <div class="info">
-        <h1>Simple Booking</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
-          tempore explicabo quod ut minima mollitia veniam reiciendis
-          consectetur! Perferendis obcaecati illum .
-        </p>
       </div>
     </div>
   </body>

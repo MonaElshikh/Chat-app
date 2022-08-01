@@ -1,0 +1,43 @@
+@media (min-width:1440px) {
+    .caht-app::before {
+        width: 47%;
+        height: 70%;
+        left: -155px;
+        top: -45px;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+    .caht-app::after {
+        width: 47%;
+        height: 88%;
+        border-top-left-radius: 43% 22%;
+        border-top-right-radius: 55%;
+        right: -300px;
+    }
+    .chat-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 52%;
+        transform: translateY(-50%);
+    }
+    .shape {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .mobile {
+        width: 255px;
+    }
+    .info {
+        width: 50%;
+       text-align: left;
+       padding: 90px;
+       margin-top: 0;
+    }
+    .info > h1 {
+        font-size: 50px;
+    }
+    .info > p {
+        font-size: 22px;
+    }
+}
